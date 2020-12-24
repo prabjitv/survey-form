@@ -1,29 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Survey to Join "Joyful A-Way Settlement" Mission</title>
   <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
+
 <body>
   <main>
     <h1 id="title">
       Survey to Join "Joyful A-Way Settlement" Mission
     </h1>
-  
+
     <p id="description">
-      Would you join us? A joyful, all-inclusive, no expense spared, one-way mission to start life on Mars. "Joyful A-Way Settlement" (JAWS) will be a success with the right mindset.
+      Would you join us? A joyful, all-inclusive, no expense spared, one-way mission to start life on Mars. "Joyful
+      A-Way Settlement" (JAWS) will be a success with the right mindset.
     </p>
 
     <form id="survey-form">
-      <input type="text" id="name" name="name" required>
-      <input type="email" id="email" name="email" required placeholder="Enter a valid email address">
-      <input type="number" id="number" name="number" min="18" max="99">
+      <input type="text" id="name-label" name="name" required placeholder="Enter your name">
+
+      <br><br>
+
+      <input type="email" id="email-label" name="email" required placeholder="Enter a valid email address">
+
+      <br><br>
+
+      <input type="number" id="number-label" name="number" min="18" max="99" placeholder="Age (18-99)">
+
+      <br><br>
+
+      <label for="role">Choose a role:</label>
+      <select name="role" id="dropdown">
+        <option value="atmos">atmos</option>
+        <option value="systems">systems</option>
+        <option value="telemetry">telemetry</option>
+        <option value="vitals">vitals</option>
+      </select>
+
+      <br><br>
+
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label><br>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br>
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label>
+
+      <br>
+      <br>
+
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+      <label for="vehicle1"> I have a bike</label><br>
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+      <label for="vehicle2"> I have a car</label><br>
+      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+      <label for="vehicle3"> I have a boat</label><br>
+
+      <br>
+      <hr>
+
+      <textarea>
+        <input type="text" placeholder="additional comments">
+
+      </textarea>
+
+      <button type="submit" id="submit" value="submit">Submit</button>
     </form>
 
 
   </main>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
+
 </html>
